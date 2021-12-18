@@ -103,6 +103,7 @@ body {
 }
 
 #hamburger{
+  display:none
 
 }
 
@@ -391,9 +392,14 @@ color: #fff;
   
 }
 
-@media screen and  (min-width: 425px ){
+
+@media screen and  (max-width: 425px ){
   
   .nav__links{
     display:none;
   }
+  #hamburger{
+    display:block;
+  }
+
 }
