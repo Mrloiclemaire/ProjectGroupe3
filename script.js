@@ -87,3 +87,10 @@ const slider = function () {
 slider()
 
 
+
+const hmb = document.querySelector('#hamburger');
+
+hmb.addEventListener("click", () => {
+	const nav = document.querySelector(".nav_menu");
+	nav.classList.toggle('open');
+})
