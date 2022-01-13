@@ -95,3 +95,5 @@ hmb.addEventListener("click", () => {
 	const nav = document.querySelector(".nav_menu");
 	nav.classList.toggle('open');
 })
+
+
