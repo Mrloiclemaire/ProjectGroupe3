@@ -227,14 +227,11 @@ background-color: var(--color-secondary);
 color: rgb(10, 9, 9);
 
 }
+
 .features_img{
     width: 80%;
-
 }
 
-.javaS{
-  width: 40%
-}
 
 
 .features_feature{
@@ -368,6 +365,7 @@ color: rgb(10, 9, 9);
 .testimonial {
   width: 65%;
   position: relative;
+  color: var(--color-primary);
 }
 
 .testimonial::before {
@@ -495,6 +493,12 @@ color: rgb(10, 9, 9);
   .header_img{
     display:none
   }
+
+  .features_feature{
+    width: 50%
+  }
+
+
 
 
 }
