@@ -4,8 +4,8 @@
 // Slider
 const slider = function () {
 	const slides = document.querySelectorAll('.slide')
-	const btnLeft = document.querySelector('.slider__btn--left')
-	const btnRight = document.querySelector('.slider__btn--right')
+	const btnLeft = document.querySelector('.slider_btn--left')
+	const btnRight = document.querySelector('.slider_btn--right')
 	const dotContainer = document.querySelector('.dots')
 
 	let curSlide = 0
@@ -16,19 +16,19 @@ const slider = function () {
 		slides.forEach(function (_, i) {
 			dotContainer.insertAdjacentHTML(
 				'beforeend',
-				`<button class="dots__dot" data-slide="${i}"></button>`
+				`<button class="dots_dot" data-slide="${i}"></button>`
 			)
 		})
 	}
 
 	const activateDot = function (slide) {
 		document
-			.querySelectorAll('.dots__dot')
-			.forEach((dot) => dot.classList.remove('dots__dot--active'))
+			.querySelectorAll('.dots_dot')
+			.forEach((dot) => dot.classList.remove('dots_dot--active'))
 
 		document
-			.querySelector(`.dots__dot[data-slide="${slide}"]`)
-			.classList.add('dots__dot--active')
+			.querySelector(`.dots_dot[data-slide="${slide}"]`)
+			.classList.add('dots_dot--active')
 	}
 
 	const goToSlide = function (slide) {
@@ -77,13 +77,14 @@ const slider = function () {
 	})
 
 	dotContainer.addEventListener('click', function (e) {
-		if (e.target.classList.contains('dots__dot')) {
+		if (e.target.classList.contains('dots_dot')) {
 			const { slide } = e.target.dataset
 			goToSlide(slide)
 			activateDot(slide)
 		}
 	})
 }
+
 slider()
 
 
