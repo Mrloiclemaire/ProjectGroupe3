@@ -141,7 +141,13 @@ font-weight: 500;
 
 .header_content{
   margin-top: 50px;
-  margin-left: 50px;
+  margin-left: 30px;
+
+}
+
+.header_content > h1{
+
+  font-size:2.8em
 }
 
 
@@ -153,15 +159,33 @@ font-weight: 500;
 display: flex;
 flex-direction: column;
 row-gap: 20px;
-padding: 2%;
+padding-left:30px;
 }
 
 .text > h2 {
-  font-size: 1.5em;
+  font-size: 2.2em;
+  margin-top: 10px;
+  margin-bottom:10px;
 } 
 
 .text > p {
-  font-size: 1.2em;
+  font-size: 1.6em;
+}
+
+.cp_embed_wrapper{
+  width:90%;
+  margin:auto;
+  padding:20px;
+}
+
+.linkList{
+  list-style: none;
+}
+
+.text > ul {
+  font-size:1.6em;
+  padding-bottom:50px;
+
 }
 
 /*Footer*/
